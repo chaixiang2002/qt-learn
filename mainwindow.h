@@ -17,11 +17,9 @@ public:
     MainWindow(QWidget *parent = nullptr);
     ~MainWindow();
 
-    void boy_be_setAge(int age);
-    void girl_be_setAge(int age);
+
 signals:
-    void boy_to_change();
-    void girl_to_chang();
+
 
 private slots:
 
@@ -33,6 +31,12 @@ private slots:
     void on_girlSpinBox_valueChanged(int arg1);
 
     void on_girlIncButton_clicked();
+
+    //
+    void ui_boy_change();
+    void ui_girl_change();
+
+    void on_infoButton_clicked();
 
 private:
     Ui::MainWindow *ui;

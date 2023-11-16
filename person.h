@@ -15,6 +15,7 @@ public:
     void setAge(qint8 _age);
     void incAge();
     int getAge();
+    QString to_string();
 signals:
     void age_be_change();
 };
